@@ -41,7 +41,7 @@ export async function createInvoice(formData: FormData) {
 }
 
 const UpdateInvoice = FormSchema.omit({ id: true, date: true });
- 
+
  
 export async function updateInvoice(id: string, formData: FormData) {
   const { customerId, amount, status } = UpdateInvoice.parse({
